@@ -1,0 +1,790 @@
+<html>
+
+    <head>
+        <title>FoodZone HomePage</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    </head>
+ <style>
+     
+     
+    
+    *{
+    margin= "0";
+    padding= "0";
+}
+
+.brand-name{
+    margin-top: 35px;
+    margin-left: 55px;
+}
+        
+.brand-name h6{
+    color: white;
+    font-size: 70px;
+}        
+        
+        
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+body{
+    font-family: tahoma;
+}
+
+.hero{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/trial2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+}
+
+
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 60px;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bold;
+    
+}
+
+.main-nav li a:hover{
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    transition: all 0.5s ease-in;
+    padding: 10px 0;
+}
+
+.logo img{
+    height: 100px;
+    float: left;
+    margin-top: 30px;
+    margin-left: -70px;
+}
+
+
+.btn{
+    border: 1px solid #FFFFFF;
+    padding: 10px 30px;
+    color: orange;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.copy{
+    width: 70%;
+    margin-left: 15%;
+}
+
+h3:after{
+    width: 660px;
+    height: 2px;
+    background-color: #e67e22;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+
+
+.features h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.arrange{
+    text-align: justify;
+}
+
+.features i{
+    font-size: 30px;
+    margin-top: 15%;
+    margin-left: 5%;
+    color: red;
+}
+
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+
+.meals-showcase li{
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.meal-collage{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.meal-collage img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: all 0.5s;
+}
+
+.meal-collage img:hover
+{
+    transform: scale(1.05);
+}
+
+
+.meals{
+    margin-top: 60px;
+}
+
+.down{
+    margin-top: 15px;
+}
+
+.four{
+    margin-top: 50px;
+}        
+ 
+.five{
+    margin-top: 20px;
+}          
+        
+.app-img img{
+    width: 40%;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.working-steps h4{
+    margin-top: 40px        
+}        
+        
+.working-steps{
+    margin-top: 30px;
+}
+
+
+.working-steps div{
+    border: 1px solid #0000ff;
+    display: inline-block;
+    border-radius: 40%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.working-steps img{
+    height: 50px;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix: after{
+    visibility: hidden;
+    content: " ";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+
+.mobile-response{
+    margin-top:50px;
+}
+
+.cities-we-cover{
+    margin-top: 60px;
+}
+
+.cities-we-cover img{
+    width: 100%;
+    height: 25%;
+}
+
+.cities-we-cover h4{
+    margin-top: 40px;
+}
+
+.foodzone-testimonials{
+    margin-top: 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/testimonials-bg-img.jpg);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    background-attachment: fixed;
+}
+
+
+.foodzone-testimonials p{
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.foodzone-testimonials cite img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.submit-button btn-half{
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+
+.distance{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.jam-coms{
+    font-size: 60px;        
+}        
+        
+     <!--This is for the Submit button-->
+    .submit-button {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submit-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submit-button:hover span {
+  padding-right: 25px;
+}
+
+.submit-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    
+<!--Submit button done!-->    
+     
+ul li a{
+   margin-top: 20%;         
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+.card{
+max-width: 300px;
+text-align: center;
+margin: auto;
+box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+    
+.continer card{
+padding: 0 16px;
+}
+
+    
+.designation{
+color: grey;
+font-size: 18px;
+}
+    
+p button{
+border: none;
+outline: 0;
+display: inline-block;
+padding: 10px;
+color: white;
+background-color: black;
+text-align: center;
+width: 100%;
+font-size: 15px;
+cursor: pointer;
+margin-bottom: 10px
+}
+
+p button:hover{
+opacity: 0.7;
+}
+
+.card img{
+width: 100%;
+}
+    
+.founder-of-what{
+font-size: 20px;
+}
+
+.final{
+margin-bottom: 0.5px;
+}    
+    
+.the-end{
+font-size: 10.5px;
+}
+
+.icon-size{
+ font-size: 30px;     
+}  
+     
+    </style>
+
+<body>
+    
+   <header>
+    
+            <div class="row">
+              
+                <div class="container">
+                
+                    
+                    <div class="col-md-6">
+                    <div class="logo">
+                      <img src="img/logo.jpg">
+                </div>
+                
+                <div class="brand-name">
+                
+                <h6>food<b>zone</b></h6>
+                
+                </div>
+                    </div>
+                        
+                   <div class="col-md-6 col-sm-6">     
+                <ul class="main-nav">
+                   
+                   <li><a href="">DELIVER FOOD</a></li>
+                   <li><a href="">LOCATIONS</a></li>
+                   <li><a href="">BREAKFAST</a></li>
+                   <li><a href="">LUNCH</a></li>
+                   <li><a href="">DINNER</a></li>
+               
+               </ul>
+       </div>  
+                    
+                </div>
+       
+       
+       
+       <div class="hero">
+           
+           <h1>GET FOOD AT YOUR DOORSTEP <br>IN 30 MINUTES</h1>
+           <a href="" class="btn">Special Offers</a>
+           <a href="" class="btn">Vegetarian</a>
+           <a href="" class="btn">Diet Menu</a>
+       
+       </div>
+    
+    
+    
+    </header> 
+    
+    <section class="features">
+    
+    <h3 class="text-center">HOW WE MANAGE TO DELIVER YOUR FOOD IN 30 MINUTES?</h3>
+        <p class="copy">We manage to deliver our food to you within 30 minutes after you place your order, with the help of a super efficient team. Each employee in this team has to co-operate with the other employee in order to reach our goal of delivering your food to you within a duration of 30 minutes.</p>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <i class="fa fa-cutlery"></i>
+                    <h4 class="text-center">Our Kitchen</h4>
+                    <p class="arrange">We are a multi-cuisine online order restaurant. We have also got specialised Chefs from all around the world to bring to you the very best food. We serve Chinese, American, Arabian, Mexican, French, Indian, Italian and British.</p>
+            
+            </div>
+            
+            <div class="col-md-4 col-sm-4">
+               <i class="fa fa-certificate"></i>
+                <h4 class="text-center">30 Minute Guarantee</h4>
+                <p class="arrange">We have our service range almost all around your country, with the same time limit guarantee. If we are unable to deliver your food within 30 minutes then you get back your money and have the food you order for free! Absoluetly free of cost!</p>
+            
+            </div>
+            
+            <div class="col-md-4 col-sm-4">
+                <i class="fa  fa-cc-discover"></i>
+                <h4 class="text-center">Please Don't Believe Us</h4>
+                <p class="arrange">Please don't believe us, try us out for yourselves and rate our service on our site. Also, get amazing disccounts on our site. Use coupon FIRSTTIMER if you are using our service for the first time. </p>
+            
+            </div>
+            
+            
+            </div>
+    
+    
+    
+    
+    </section>
+        
+        <section class="meals">
+        
+            <ul class="meals-showcase clearfix">
+            
+                <li>
+                
+                    <figure class="meal-collage">
+                <img src="img/1.jpg" class="down">
+                    </figure>
+                </li>
+             
+                <li>
+                
+                    <figure class="meal-collage">
+                <img src="img/2-new.jpg">
+                    </figure>
+                </li>
+                 
+                <li>
+                
+                    <figure class="meal-collage">
+                 <img src="img/3.jpg">
+                    </figure>
+                </li>
+                
+                <li>
+                
+                    <figure class="meal-collage">
+                <img src="img/4.jpg" class="four">
+                    </figure>
+                </li>
+                 
+                <li>
+                
+                    <figure class="meal-collage">
+                 <img src="img/5.jpg" class="five">
+                    </figure>
+                </li>
+                 
+                <li>
+                     <figure class="meal-collage">
+                <img src="img/6.jpg">
+                    </figure>
+                 </li>
+            
+            
+            </ul>
+        
+        
+        </section>
+    
+        
+        <section class="mobile-response">
+
+        <h3 class="text-center">KNOW ABOUT OUR APP MADE TO SAVE YOU FROM HUNGER?</h3>
+        <div class="container">
+        
+            <div class="row">
+             <div class="col-md-6 col-sm-6">
+                 <div class="app-img">
+                 <img src="img/my-iPhone-app.jpg">
+                 </div>
+                 </div>
+            
+                <div class="col-md-6 col-sm-6">
+                
+                    <div class="working-steps">
+                    
+                    <div>1.</div>
+                        
+                        <p>It's easy, first head to the App Store if you use ios or head to the Google Play Store if you are an Android user. Search for our app called "food<b>zone</b>".</p>
+                        
+                        <div>2.</div>
+                        <p>Agree to all the Installation Terms and Conditions and start the Install.</p>
+                        
+                        <div>3.</div>
+                        <p>After installation give us your address and phone number. Please ensure that accurate information is given.</p>
+                        
+                        <div>4.</div>
+                        <p>That's it! Your food<b>zone</b> app is ready and you can now order food from us. We recieve payments via Credit Card, PayPal and Bitcoin too.</p>
+                        
+                        <br>
+                        
+                        <a href=""><img src="img/download-on-appStore.jpg"></a>
+                        <a href=""><img src="img/app-on-googlePlay.jpg"></a>
+                    
+                    
+                   </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    
+    </section>
+    
+    <section class="cities-we-cover">
+        
+        <h3 class="text-center">SOME OF THE MAIN CITIES WE COVER IN YOUR COUNTRY</h3>
+        <div class="container">
+        <div class="row">
+         <div class="col-md-3 col-sm-3">
+             <h4 class="text-center">Hyderabad</h4>
+            <img src="img/Hyderabad.jpg">
+             <hr>
+             <p><i class="fa fa-envelope"></i>Email:hyderabade@foodzone.com</p>
+             <p><i class="fa fa-phone-square"></i>Customer Service:7298482938</p>
+             <p><i class="fa fa-user"></i>Person Incharge: Suhayb MM</p>
+             
+            </div>   
+            
+            <div class="col-md-3 col-sm-3">
+             <h4 class="text-center">Mumbai</h4>
+            <img src="img/Mumbai.jpg">
+             <hr>
+             <p><i class="fa fa-envelope"></i>Email:mumbai@foodzone.com</p>
+             <p><i class="fa fa-phone-square"></i>Customer Service:7392403742</p>
+             <p><i class="fa fa-user"></i>Person Incharge: Hina M</p>
+            
+            </div>   
+                        
+            <div class="col-md-3 col-sm-3">
+             <h4 class="text-center">Bengaluru</h4>
+            <img src="img/Bengaluru.jpg">
+             <hr>
+             <p><i class="fa fa-envelope"></i>Email:bengaluru@foodzone.com</p>
+             <p><i class="fa fa-phone-square"></i>Customer Service:7402490318</p>
+             <p><i class="fa fa-user"></i>Person Incharge: Haris MM</p>
+            
+            </div>   
+                       
+            <div class="col-md-3 col-sm-3">
+             <h4 class="text-center">New Delhi</h4>
+            <img src="img/New-Delhi.jpg">
+             <hr>
+             <p><i class="fa fa-envelope"></i>Email:delhi@foodzone.com</p>
+             <p><i class="fa fa-phone-square"></i>Customer Service:7084028470</p>
+             <p><i class="fa fa-user"></i>Person Incharge: Alina Ruhi</p>
+            
+            </div>   
+                       
+            
+            </div>
+        
+        </div>
+        
+        </section>
+    
+        
+        <br>
+        <br>
+        
+           <div class="card">
+        
+        
+        <img src="img/profilec.jpg">
+        
+        <div class="container card">
+        
+            
+            <h2>Suhayb MM</h2>
+            <p class="designation">CEO & FOUNDER</p>
+            <p class="founder-of-what">food<b>zone</b></p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook icon-size"></i></a>
+            <a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter icon-size"></i></a>
+            <a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin icon-size"></i></a>
+            <a href="https://accounts.google.com/ServiceLogin/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&followup=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><i class="fa fa-google-plus  icon-size"></i></a>
+            <p><button class="contact">Contact</button></p>
+        
+        </div>
+        
+        </div>
+        
+        <section class="foodzone-testimonials">
+        
+            <h3 class="text-center">WHAT OUR CUSTOMERS SAY ABOUT OUR ONLINE SERVICE</h3>
+            <div class="container">
+            
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                    
+                        <blockquote>
+                            <p>I just love this! food<b>zone</b> is the best. Really Efficient and it does keep its word of delivering food to you in 30 minutes. It isn't even that expensive.</p>                        
+                        
+                            <cite><img src="img/testimonial-1.jpg"> Samarth V.</cite>
+                        </blockquote>
+                        </div>
+                    
+                    <div class="col-md-3 col-sm-3">
+                    
+                        <blockquote>
+                            <p>food<b>zone</b> is a really good online order restaurant. The food tastes wonderful. Food reaches on time, so far so good. Hope it goes on just this way.</p>                        
+                        
+                            <cite><img src="img/adi.jpg"> Adithya Singh</cite>
+                        </blockquote>
+                        </div>  
+                    
+                    <div class="col-md-3 col-sm-3">
+                    
+                        <blockquote>
+                            <p>I have installed the food<b>zone</b> app and I always order through it. I am impressed! This helps me a lot when i am too tired to cook and very hungry.</p>                        
+                        
+                            <cite><img src="img/testimonial-3.jpg"> Aaron D'silva</cite>
+                        </blockquote>
+                        </div>  
+                    
+                    <div class="col-md-3 col-sm-3">
+                    
+                        <blockquote>
+                            <p>Really good work, food<b>zone</b> team! This team is really efficient, and my food always reaches on time. This is budget friendly too!</p>                        
+                        
+                            <cite><img src="img/testimonial-4.jpg"> Ronit Barik</cite>
+                        </blockquote>
+                        </div>  
+                
+                </div>
+            
+            </div>
+        
+        </section>
+        
+        <section class="form">
+        
+        <div class="container">
+            <i class="fa fa-comments jam-coms"></i>
+            <h3 class="text-center comment">WRITE TO US ABOUT YOUR EXPERIENCE WITH OUR SERVICE</h3>
+            
+            </div>
+            <div class="row distance">
+            
+                <div class="col-md-4 col-sm-4">
+                  <label><b>Email:</b></label>
+                <input type="email" placeholder="Email Address" class="form-control">
+                    
+                    <br>
+                    <br>
+                <label><b>Username:</b></label>
+                    <input type="text" placeholder="Username" class="form-control">
+                    
+                    <br>
+                    <br>
+                <label><b>Password:</b></label>
+                    <input type="password" placeholder="Password" class="form-control">
+                    
+                    <br>
+                    <br>
+                <label><b>Rating:</b></label>
+                    <input type="int" placeholder="Rating(Out of 5)" class="form-control">
+                    
+                          <br>
+                          <br>
+                         <label><input type="radio" name="indoor-outdoor"> Male</label>
+                         <label><input type="radio" name="indoor-outdoor"> Female</label>
+        
+                    
+                </div>
+            
+                <div class="col-md-4 col-sm-4">
+                <label><b>Comment:</b></label>
+                <textarea class="form-control" rows="8" placeholder="Your Comment"></textarea>
+                
+                </div>
+        
+                <button class="btn btn-half submit-button"><span>Submit </span></button>
+            
+            </div>
+        
+        </section>
+        
+        
+        <h2 class="text-center">OUR HEADQUARTERS IN INDIA</h2>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5842596230827!2d78.46130837497329!3d17.431728116922837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfca50a9a17838243!2sGlass+House+%40+Jalavihar!5e0!3m2!1sen!2sin!4v1502651161607" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        
+        <div class="the-end">
+        <p class="text-center">Copyright <i class="fa fa-copyright final"></i> 2017 food<b>zone</b>. All rights reserved.</p>
+        <p class="text-center">Designed, Developed & Maintained by Suhayb MM</p>
+        </div>
+    </body>
+
+
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
